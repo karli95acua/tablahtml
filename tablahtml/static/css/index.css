@@ -1,0 +1,108 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    background-image: url("/static/images/bojack.jpeg");
+    background-repeat: no-repeat;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    padding-top: 0.6em;
+    font-weight: bold;
+    color: rgb(235, 164, 232);
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    padding-top: 0.1em;
+    padding-bottom: 0.2em;
+    text-shadow: 0 0 3px rgb(235, 164, 232), 0 0 5px #0000FF;
+}
+
+.row {
+    justify-content: center;
+}
+
+th {
+    font-style: italic;
+    color: plum !important;
+    font-size: 1.5em !important;
+}
+
+.container-footer {
+    background-color: black;
+    color: white;
+    height: 60px;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+
+.pie-pag {
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+}
+
+
+.character-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+.character-image1,
+.character-image2,
+.character-image3,
+.character-image4,
+.character-image5,
+.character-image7 {
+    max-width: 150px;
+    max-height: 150px;
+    margin: 0 10px;
+}
+
+.character-image6 {
+    max-width: 170px;
+    max-height: 170px;
+    margin: 0 10px;
+}
+
+.character-image1:hover {
+    transform: scale(1.2);
+}
+
+.character-image2:hover {
+    transform: scale(1.2);
+}
+
+.character-image3:hover {
+    transform: scale(1.2);
+}
+
+.character-image4:hover {
+    transform: scale(1.2);
+}
+
+.character-image5:hover {
+    transform: scale(1.2);
+}
+
+.character-image6:hover {
+    transform: scale(1.2);
+}
+
+.character-image7:hover {
+    transform: scale(1.2);
+}

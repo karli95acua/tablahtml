@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla de HTML</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='/css/index.css') }}">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <h1>Personajes de serie</h1>
+            <h2>"Bojack Horseman"</h2>
+            <div class="col-6">
+                <table class="table table-dark table-hover">
+            </div>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Nombre completo</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for usuario in usuarios %}
+                <tr>
+                    <td>{{ usuario['Nombre'] }}</td>
+                    <td>{{ usuario['Apellido'] }}</td>
+                    <td>{{ usuario['Nombre'] }} {{ usuario['Apellido'] }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+            </table>
+        </div>
+        <div class="character-container">
+            <img src="{{ url_for('static', filename='images/bojack-h.png') }}" alt="Character 1" class="character-image1">
+            <img src="{{ url_for('static', filename='images/todd-ch.png') }}" alt="Character 2" class="character-image2">
+            <img src="{{ url_for('static', filename='images/princess-c.png') }}" alt="Character 3" class="character-image3">
+            <img src="{{ url_for('static', filename='images/diane-n.png') }}" alt="Character 4" class="character-image4">
+            <img src="{{ url_for('static', filename='images/mrpeanut.png') }}" alt="Character 5" class="character-image5">
+            <img src="{{ url_for('static', filename='images/vincent-a.png') }}" alt="Character 6" class="character-image6">
+            <img src="{{ url_for('static', filename='images/sarah-l.png') }}" alt="Character 7" class="character-image7">
+        </div>
+    </div>
+    <footer>
+        <div class="container-footer">
+            <span class="pie-pag">&copy; by Karli Acuña • 2023</span>
+        </div>
+    </footer>
+</body>
+
+</html>
